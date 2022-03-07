@@ -5,6 +5,7 @@ import './MenuItems.css'
 const MenuItems = () => {
   return (
  <>
+ <div className='contenedor-menu'></div>
  <ul className='menu-items'>
  <li><a href='#'>INICIO</a></li>
  <li><a href='#'>CATALOGO</a></li>

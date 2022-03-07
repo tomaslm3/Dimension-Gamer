@@ -9,10 +9,11 @@ const NavBar = () => {
     <div className='contenedor-nav'>
         <Logo></Logo>
         <MenuItems></MenuItems>
-        <div className='contenedor-btn'></div>
+        <div className='contenedor-btn'>
         <button><FaSearch/></button>
         <button><FaRegUser/></button>
         <button><FaShoppingCart/></button>
+        </div>
     </div>
   )
 }
