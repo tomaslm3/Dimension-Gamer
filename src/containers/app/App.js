@@ -1,10 +1,11 @@
+import { Noticias } from '../../components/noticias/Noticias';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-
-    </div>
+    <>
+      <Noticias />
+    </>
   );
 }
 
