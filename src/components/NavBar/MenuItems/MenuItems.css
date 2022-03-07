@@ -1,0 +1,16 @@
+.menu-items{
+    display: flex;
+    list-style: none;
+    font-family:'Alumni Sans', sans-serif;
+    font-size: 20px;
+    margin-left: 40px;
+}
+.menu-items li{
+    padding: 0 30px;
+    margin-right: 80px;
+}
+.menu-items a{
+    text-decoration: none;
+    letter-spacing: 1px;
+    color: black;
+}
