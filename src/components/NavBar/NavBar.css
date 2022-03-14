@@ -3,6 +3,7 @@
     padding: 0;
 }
 .contenedor-nav{
+    background-color: var(--dark);
     display:flex;
     justify-content: space-between;
     align-items: center;

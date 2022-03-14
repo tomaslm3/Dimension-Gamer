@@ -4,3 +4,15 @@
     height: 100vh; */
     position: relative;
 }
+
+html {
+    background-color: var(--main);
+}
+
+
+
+:root {
+    --main: #1a1a33;
+    --dark: #0c0c22;
+    --blue: #3a86ff;
+}

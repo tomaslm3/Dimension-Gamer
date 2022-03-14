@@ -1,5 +1,7 @@
 .noticias-container {
 
+    background-color: var(--dark);
+
     display: flex;
     justify-content: space-between;
     margin: 55px;
