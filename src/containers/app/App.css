@@ -1,0 +1,9 @@
+:root{
+    --LightGreyColor: #6c757d ;
+    --GreyColor: #343a40;
+    --DetailsColor: #3a86ff;
+}
+
+html{
+    background-color: aliceblue;
+}

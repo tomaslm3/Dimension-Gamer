@@ -1,6 +1,7 @@
 
-import React from 'react'
-import './MenuItems.css'
+import React from 'react';
+import {FaRegUser,FaSearch,FaShoppingCart} from "react-icons/fa";
+ import './NavBar.css';
 
 const MenuItems = () => {
   return (
@@ -10,9 +11,14 @@ const MenuItems = () => {
  <li><a href='#'>INICIO</a></li>
  <li><a href='#'>CATALOGO</a></li>
  <li><a href='#'>OFERTAS</a></li>
- <li><a href='#'>ACERCA DE</a></li>
  <li><a href='#'>CONTACTO</a></li>
  </ul>
+
+ <div className='contenedor-btn'>
+        <button><FaSearch/></button>
+        <button><FaRegUser/></button>
+        <button><FaShoppingCart/></button>
+        </div>
  </>
   )
 }
