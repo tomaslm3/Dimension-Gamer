@@ -2,8 +2,9 @@
     --LightGreyColor: #6c757d ;
     --GreyColor: #343a40;
     --DetailsColor: #3a86ff;
+    --DetailsColor2: #38dce2;
 }
 
 html{
-    background-color: aliceblue;
+    background-color: var(--GreyColor);
 }
