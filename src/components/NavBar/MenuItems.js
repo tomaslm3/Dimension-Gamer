@@ -1,6 +1,5 @@
-
 import React from 'react';
-import {FaShoppingCart,FaBars} from "react-icons/fa";
+import {FaRegUser,FaSearch,FaShoppingCart,FaBars} from "react-icons/fa";
  import './NavBar.css';
 
 const MenuItems = () => {
