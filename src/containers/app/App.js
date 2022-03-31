@@ -15,6 +15,13 @@ function App() {
     
       <Portada/>
       <Noticias />
+      <CarouselFeatures 
+      slides={carouselData}
+      />
+      <CarouselFeatures 
+      slides={carouselData}
+      onSale={true}/>
+  
     </>
   );
 }

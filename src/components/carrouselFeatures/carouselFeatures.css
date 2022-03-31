@@ -1,14 +1,90 @@
+.title{
+    margin-left: 55px;
+    color: white;
+}
 .carousel{
-    position: relative;
-    height: 500px;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    height: 500px;
+    background-color: var(--dark);
+    margin: 0px 55px 55px 55px;
+    height: 432px;
+    color: white;
+}
+
+.slide-active{
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+.slideStyles{
+    display: flex;
     align-items: center;
 }
 
+
 .image{
-    height: 250px;
-    width: 400px;
+    height: 420px;
+    width: 700px;
     border-radius: 10px;
 }
 
+.slide{
+    display: none;
+}
+
+.left-arrow{
+    height: 430px;
+    width: 100px;
+    filter: brightness(1);
+    border: 5px solid var(--blue);
+    background-color: var(--dark);
+    color: var(--blue);
+}
+
+.right-arrow{
+    height: 430px;
+    width: 100px;
+    filter: brightness(1);
+    border: 5px solid var(--blue);
+    background-color: var(--dark);
+    color: var(--blue);
+}
+
+/* Carousel Descuentos*/
+.carouselDiscounts{
+    display: flex;
+    align-items: center;
+    height: 500px;
+    background-color: var(--dark);
+    margin: 0px 55px 55px 55px;
+    height: 432px;
+    color: white;
+}
+
+.slide-active{
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+.slideStyles{
+    display: flex;
+    align-items: center;
+}
+
+
+.image{
+    height: 420px;
+    width: 700px;
+    border-radius: 10px;
+}
+
+.slide{
+    display: none;
+}
+
+.offLabel{
+    width: max-content;
+    font-size: 50px;
+    background-color: green;
+}
