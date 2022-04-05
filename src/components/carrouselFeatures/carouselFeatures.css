@@ -1,90 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@1,500&family=Fira+Code:wght@300&family=Montserrat:wght@500&family=Staatliches&display=swap');
+
+
+/* Carousel Descuentos*/
 .title{
+    font-family:'Alumni Sans', sans-serif;
+    font-size: 55px;
     margin-left: 55px;
     color: white;
 }
+
 .carousel{
+    height: 400px;
     display: flex;
+    background-color: var(--ContainerGrayColor);
     align-items: center;
-    height: 500px;
-    background-color: var(--dark);
+    justify-content: space-between;
     margin: 0px 55px 55px 55px;
-    height: 432px;
-    color: white;
+    padding: 0px;
+    box-shadow: 0px 0px 5px 1px black;
+    border-radius: 5px;
+}
+
+.arrows{
+    height: 400px;
+    width: 50px;
+    border: 5px solid var(--blue);
+    background-color: var(--dark);
+    color: var(--blue);
+    border-radius: 5px;
 }
 
 .slide-active{
-    display: flex;
-    align-items: center;
-    align-content: center;
-}
-.slideStyles{
-    display: flex;
-    align-items: center;
-}
-
-
-.image{
-    height: 420px;
-    width: 700px;
-    border-radius: 10px;
+    
+    width: 1250px;
+    padding: 0px;
 }
 
 .slide{
     display: none;
+    
 }
 
-.left-arrow{
-    height: 430px;
-    width: 100px;
-    filter: brightness(1);
-    border: 5px solid var(--blue);
-    background-color: var(--dark);
-    color: var(--blue);
-}
-
-.right-arrow{
-    height: 430px;
-    width: 100px;
-    filter: brightness(1);
-    border: 5px solid var(--blue);
-    background-color: var(--dark);
-    color: var(--blue);
-}
-
-/* Carousel Descuentos*/
-.carouselDiscounts{
-    display: flex;
-    align-items: center;
-    height: 500px;
-    background-color: var(--dark);
-    margin: 0px 55px 55px 55px;
-    height: 432px;
-    color: white;
-}
-
-.slide-active{
-    display: flex;
-    align-items: center;
-    align-content: center;
-}
 .slideStyles{
+    width: auto;
     display: flex;
-    align-items: center;
+    justify-content: space-between;
+    padding: 0px;
 }
 
-
-.image{
-    height: 420px;
-    width: 700px;
-    border-radius: 10px;
+.slideStylesOff{
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
 }
 
-.slide{
-    display: none;
+.slideInfo{
+    color: white;
+    width: 600px;
+    
+}
+
+.infoTitle{
+    margin: 25px;
+    margin-bottom: 40px;
+    font-family:'Alumni Sans', sans-serif;
+    font-size: 40px;
+    padding: 0px;
+}
+
+.infoDesc{
+    height: 100px;
+    margin-bottom: 120px;
 }
 
 .offLabel{
+    font-size: 45px;
     width: max-content;
-    font-size: 50px;
     background-color: green;
 }
+
+.image{
+    width: 600px;
+    height: 410px;
+    box-shadow: 0px 0px 10px 1px black;
+    padding: 0px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .title{
+        font-family:'Alumni Sans', sans-serif;
+        font-size: 30px;
+        color: white;
+        padding: 0px;
+        margin: 0px;
+        margin-left: 40px;
+    }
+    
+    .carousel{
+        width: 690px;
+        height: 500px;
+        display: flex;
+        background-color: var(--ContainerGrayColor);
+        align-items: center;
+        justify-content: space-between;
+        margin: 0px 38px 55px 38px;
+        padding: 0px;
+        box-shadow: 0px 0px 5px 1px black;
+        border-radius: 5px;
+    }
+    
+    .arrows{
+        height: 500px;
+        width: 40px;
+        border: 5px solid var(--blue);
+        background-color: var(--dark);
+        color: var(--blue);
+        border-radius: 5px;
+    }
+    
+    .slide-active{
+        width: 610px;
+        padding: 0px;
+    }
+    
+    .slide{
+        display: none;
+    }
+    
+    .slideStyles{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        padding: 0px;
+    }
+
+    .slideStylesOff{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0px;
+    }
+    
+    .slideInfo{
+        color: white;
+        width: 610px;
+        
+    }
+    
+    .infoTitle{
+        margin: 20px;
+        margin-bottom: 20px;
+        font-family:'Alumni Sans', sans-serif;
+        font-size: 35px;
+        padding: 0px;
+    }
+    
+    .infoDesc{
+        height: 60px;
+        width: 600px;
+        margin-bottom: 50px;
+        font-size: 13px;
+    }
+    
+    .offLabel{
+        font-size: 25px;
+        width: max-content;
+        background-color: green;
+
+    }
+    
+    .image{
+        width: 610px;
+        height: 260px;
+        box-shadow: 0px 0px 10px 1px black;
+        padding: 0px;
+    }
+    
+    }
+
+    @media screen and (max-width: 425px) {
+        .title{
+            font-family:'Alumni Sans', sans-serif;
+            font-size: 60px;
+            color: rgb(255, 255, 255);
+            padding: 0px;
+            margin: 0px;
+            margin-left: 40px;
+        }
+        
+        .carousel{
+            width: 800px;
+            height: 900px;
+            display: flex;
+            background-color: var(--ContainerGrayColor);
+            justify-content: space-between;
+            margin: 0px 38px 55px 38px;
+            padding: 0px;
+            box-shadow: 0px 0px 5px 1px black;
+            border-radius: 5px;
+        }
+        
+        .arrows{
+            height: 900px;
+            width: 40px;
+            border: 5px solid var(--blue);
+            background-color: var(--dark);
+            color: var(--blue);
+            border-radius: 5px;
+        }
+        
+        .slide-active{
+            width: 720px;
+            padding: 0px;
+        }
+        
+        .slide{
+            display: none;
+        }
+        
+        .slideStyles{
+            display: flex;
+            flex-direction: column-reverse;
+            padding: 0px;
+            top: -80px;
+        }
+    
+        .slideStylesOff{
+            display: flex;
+            flex-direction: column;
+            padding: 0px;
+            top: -80px;
+        }
+        
+        .slideInfo{
+            color: white;
+            
+        }
+        
+        .infoTitle{
+            font-family:'Alumni Sans', sans-serif;
+            font-size: 50px;
+            padding: 0px;
+        }
+        
+        .infoDesc{
+            height: 60px;
+            width: 720px;
+            font-size: 25px;
+        }
+        
+        .offLabel{
+            font-size: 30px;
+            width: max-content;
+            background-color: green;
+            bottom: -160px;
+        }
+        
+        .image{
+            width: 700px;
+            height: 480px;
+            box-shadow: 0px 0px 10px 1px black;
+            margin-left: 8px;
+        }
+    }

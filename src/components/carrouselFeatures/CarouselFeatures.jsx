@@ -48,9 +48,9 @@ function CarouselFeatures({ slides, onSale }) {
   return (
     <div>
       <div className="title">En oferta</div>
-    <section className="carouselDiscounts">
+    <section className="carousel">
       
-      <button className="left-arrow" onClick={prevSlide}>
+      <button className="arrows" onClick={prevSlide}>
       <FaAngleDoubleLeft/>
       </button>
       {slideDiscount.map((slide, index) => {
@@ -61,19 +61,19 @@ function CarouselFeatures({ slides, onSale }) {
           >
             
             {index === currentSlide && (
-              <div className='slideStyles'>
+              <div className='slideStylesOff'>
+              <img src={slide.image} alt="img not found" className="image" />
               <div className="slideInfo">  
-                <h2>{slide.data.title}</h2>
-                <p>{slide.data.description}</p>
+                <h2 className="infoTitle">{slide.data.title}</h2>
+                <p className="infoDesc">{slide.data.description}</p>
                 <p className="offLabel">-{slide.discounts.percent}%</p>
               </div>
-              <img src={slide.image} alt="img not found" className="image" />
             </div>
             )}
           </div>
         );
       })}
-      <button className="right-arrow" onClick={nextSlide}>
+      <button className="arrows" onClick={nextSlide}>
       <FaAngleDoubleRight/>
       </button>
     </section>
@@ -85,7 +85,7 @@ function CarouselFeatures({ slides, onSale }) {
       <div>
         <div className="title">Destacados</div> 
       <section className="carousel">
-        <button className="left-arrow" onClick={prevSlide}>
+        <button className="arrows" onClick={prevSlide}>
         <FaAngleDoubleLeft/>
         </button>
         {slides.map((slide, index) => {
@@ -97,12 +97,12 @@ function CarouselFeatures({ slides, onSale }) {
             >
               {index === currentSlide && (
                 <div className='slideStyles'>
-                  <img src={slide.image} alt="img not found" className="image" />
                   <div className="slideInfo">  
-                    <h2>{slide.data.title}</h2>
-                    <p>{slide.data.description}</p>
-                    <p>-{slide.discounts.percent}%</p>
+                    <h2 className="infoTitle">{slide.data.title}</h2>
+                    <p className="infoDesc">{slide.data.description}</p>
+                    <p className="offLabel">-{slide.discounts.percent}%</p>
                   </div>
+                  <img src={slide.image} alt="img not found" className="image" />
                 </div>
               )}
             </div>
@@ -115,18 +115,18 @@ function CarouselFeatures({ slides, onSale }) {
             >
               {index === currentSlide && (
                 <div className='slideStyles'>
-                  <img src={slide.image} alt="img not found" className="image" />
                   <div className="slideInfo">
-                    <h2>{slide.data.title}</h2>
-                    <p>{slide.data.description}</p>
+                    <h2 className="infoTitle">{slide.data.title}</h2>
+                    <p className="infoDesc">{slide.data.description}</p>
                   </div>
+                  <img src={slide.image} alt="img not found" className="image" />
                 </div>
               )}
             </div>
           );
         }
         })}
-        <button className="right-arrow" onClick={nextSlide}>
+        <button className="arrows" onClick={nextSlide}>
         <FaAngleDoubleRight/>
         </button>
       </section>
