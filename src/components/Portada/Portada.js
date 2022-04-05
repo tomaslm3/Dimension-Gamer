@@ -6,7 +6,7 @@ const Portada = () => {
     <div className='portada'>
         <div className='texto-portada'>
             <h3>¡BIENVENIDOS A DIMENSION GAMER!</h3>
-            <p>Disfruta de los mejores juegos al mejor precio del mercado.</p>
+            <p>Disfruta de los mejores juegos al mejor precio del mercado</p>
         </div>
     </div>
   )
