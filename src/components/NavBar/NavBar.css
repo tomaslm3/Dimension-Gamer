@@ -82,27 +82,10 @@
     border-radius: 50%;
 }
 
-
-@media screen and (max-width: 952px) {
-    
-   .logo{
-    width: 100px;
-    height: 75px;
-    padding-left: 25px;
-   }
-   .menu-items li a {
-       font-size: 18px;
-
-   }
-   .contenedor-btn button{
-       height: 40px;
-       font-size: 18px;
-   }
-}
-
-@media screen and (max-width: 858px) {
+@media screen and (max-width: 768px) {
     .contenedor-nav{
         height: 65px;
+        width: 365px;
     }
     .contenedor-btn{
         display: inline-flex;
@@ -137,4 +120,25 @@
         display: inline-block;
     }
    
+ }
+
+ @media screen and (max-width:425px) {
+    
+   
+    .logo{
+     width: 100px;
+     height: 75px;
+     padding-left: 25px;
+    }
+    .menu-items{
+        margin-right: 0px;
+    }
+    .menu-items li a {
+        font-size: 18px;
+ 
+    }
+    .contenedor-btn button{
+        height: 40px;
+        font-size: 18px;
+    }
  }

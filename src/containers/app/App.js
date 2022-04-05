@@ -5,6 +5,7 @@ import './App.css';
 import CarouselFeatures from '../../components/carrouselFeatures/CarouselFeatures';
 import { carouselData } from '../../components/carrouselFeatures/carouselData';
 import Portada from '../../components/Portada/Portada';
+import Footer from '../../components/Footer/Footer';
 
 
 
@@ -21,7 +22,7 @@ function App() {
       <CarouselFeatures 
       slides={carouselData}
       onSale={true}/>
-  
+      <Footer/>
     </>
   );
 }
