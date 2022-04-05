@@ -84,8 +84,8 @@
 
 @media screen and (max-width: 768px) {
     .contenedor-nav{
-        height: 65px;
-        width: 365px;
+        height: 75px;
+        width: 675px;
     }
     .contenedor-btn{
         display: inline-flex;
@@ -113,7 +113,7 @@
     }
     .logo{
         padding-left: 35px;
-        height: 65px;
+        height: 70px;
 
     }
     .menu-items-btn{
@@ -124,14 +124,13 @@
 
  @media screen and (max-width:425px) {
     
-   
+    .contenedor-nav{
+        width: 400px;
+    }
     .logo{
      width: 100px;
      height: 75px;
      padding-left: 25px;
-    }
-    .menu-items{
-        margin-right: 0px;
     }
     .menu-items li a {
         font-size: 18px;
