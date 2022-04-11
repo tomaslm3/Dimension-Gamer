@@ -1,13 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react'
 import {FaRegUser,FaSearch,FaShoppingCart,FaBars} from "react-icons/fa";
- import './NavBar.css';
+import "./NavBarMobile.css"
 
-const MenuItems = () => {
+const MenuItemsMobile = () => {
+
+    
 
   return (
- <>
-
- <ul className='menu-items'>
+      <>
+     
+ <ul className='menu-items-mobile'>
+     
  <li><a href='#'>INICIO</a></li>
  <li><a href='#'>CATALOGO</a></li>
  <li><a href='#'>NOVEDADES</a></li>
@@ -16,8 +19,9 @@ const MenuItems = () => {
  <li><a href='#'>CONTACTO</a></li>
  
  </ul>
- </>
+}
+        </>
   )
 }
 
-export default MenuItems
+export default MenuItemsMobile
