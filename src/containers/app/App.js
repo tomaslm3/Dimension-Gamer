@@ -3,10 +3,10 @@ import NavBar from '../../components/NavBar/NavBar';
 import { Noticias } from '../../components/noticias/Noticias';
 import './App.css';
 import CarouselFeatures from '../../components/carrouselFeatures/CarouselFeatures';
-import { carouselData } from '../../components/carrouselFeatures/carouselData';
 import Portada from '../../components/Portada/Portada';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
+import Footer from '../../components/Footer/Footer';
 
 
 
@@ -30,10 +30,6 @@ function App() {
 
   
   return (
-
-
-
-
     <>
       <NavBar/>
       <Portada/>
