@@ -36,7 +36,6 @@ function App() {
 
     <>
       <NavBar/>
-    
       <Portada/>
       <Noticias />
       <CarouselFeatures 
@@ -45,7 +44,7 @@ function App() {
       <CarouselFeatures 
       slides={ state }
       onSale={true}/>
-  
+      <Footer/>
     </>
   );
 }

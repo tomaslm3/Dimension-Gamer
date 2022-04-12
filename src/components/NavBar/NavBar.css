@@ -13,6 +13,9 @@
     align-items: center;
     border-bottom: 1px solid var(--DetailsColor2);
     box-shadow: 5px 0 10px rgba(0,0,0,.6);
+    width: 100%;
+    position: fixed;
+    z-index: 10;
 }
 
 /* BOTON */
@@ -45,7 +48,6 @@
     display: flex;
     cursor: pointer;
     padding-top: 10px;
-    margin-right: 120px;
     list-style: none;
 }
 .menu-items li{
@@ -67,9 +69,6 @@
 .menu-items-btn{
     display: none;
 }
-.show {
-    
-}
 
 /*LOGO*/
 
@@ -80,35 +79,21 @@
     width: 120px;
     height: 80px;
     border-radius: 50%;
+    padding-left: 20px;
 }
 
-
-@media screen and (max-width: 952px) {
-    
-   .logo{
-    width: 100px;
-    height: 75px;
-    padding-left: 25px;
-   }
-   .menu-items li a {
-       font-size: 18px;
-
-   }
-   .contenedor-btn button{
-       height: 40px;
-       font-size: 18px;
-   }
-}
-
-@media screen and (max-width: 858px) {
+@media screen and (max-width: 768px) {
     .contenedor-nav{
-        height: 65px;
+        background: #000;
+        height: 75px;
+        width: 100%;
     }
     .contenedor-btn{
         display: inline-flex;
     }
     
     .menu-items{
+        display:none;
         position: fixed;
         width: 100vw;
         height: calc(100%-65px);
@@ -130,11 +115,35 @@
     }
     .logo{
         padding-left: 35px;
-        height: 65px;
+        height: 70px;
 
     }
     .menu-items-btn{
         display: inline-block;
+        
+    }
+    .contenedor-btn button{
+        background-color: var(--LightGreyColor);
     }
    
+ }
+
+ @media screen and (max-width:425px) {
+    
+    .contenedor-nav{
+        width: 400px;
+    }
+    .logo{
+     width: 100px;
+     height: 75px;
+     padding-left: 25px;
+    }
+    .menu-items li a {
+        font-size: 18px;
+ 
+    }
+    .contenedor-btn button{
+        height: 40px;
+        font-size: 18px;
+    }
  }

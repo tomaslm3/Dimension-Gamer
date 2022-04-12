@@ -3,8 +3,12 @@
     --GreyColor: #343a40;
     --DetailsColor: #3a86ff;
     --DetailsColor2: #38dce2;
+    --Plata: #e3e4e5;
+    --ContainerGrayColor: #282c31;
 }
-
+*{
+    margin: 0px;
+}
 html{
     background-color: var(--GreyColor);
 }
