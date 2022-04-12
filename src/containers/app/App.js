@@ -5,22 +5,44 @@ import './App.css';
 import CarouselFeatures from '../../components/carrouselFeatures/CarouselFeatures';
 import { carouselData } from '../../components/carrouselFeatures/carouselData';
 import Portada from '../../components/Portada/Portada';
-import Footer from '../../components/Footer/Footer';
-
+import axios from 'axios';
+import { useEffect, useState } from 'react';
 
 
 
 function App() {
+
+  const [ state , setState] = useState( [] );
+  
+  useEffect(() => {
+
+    const getData = async () => {
+      let { data } = await axios.get('http://localhost:8000/games');
+      return data;
+    }
+
+    getData().then( games => setState( games ) );
+  
+  }, [])
+
+  console.log( state );
+  
+
+  
   return (
+
+
+
+
     <>
       <NavBar/>
       <Portada/>
       <Noticias />
       <CarouselFeatures 
-      slides={carouselData}
+      slides={ state }
       />
       <CarouselFeatures 
-      slides={carouselData}
+      slides={ state }
       onSale={true}/>
       <Footer/>
     </>
