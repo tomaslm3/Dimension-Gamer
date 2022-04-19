@@ -1,9 +1,29 @@
 import React from 'react'
+import Juego from "./Juego.jsx"
 
-const Juegos = () => {
+const Juegos = ({ juegos }) => {
+
   return (
-    <div>Juegos</div>
+    
+      juegos.map( (juego, index ) => 
+      {
+
+        return (<Juego 
+                  id = {index}
+                  image = {juego.image}
+                  title= {juego.data.title}
+                  description= {juego.data.description}
+                  discount= {juego.discount.discount}
+                  />)
+      
+
+      }
+
+
+      )
   )
+    
+  
 }
 
 export default Juegos

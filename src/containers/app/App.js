@@ -1,47 +1,40 @@
-
+import Home from '../../components/home/Home';
+import { Route, Routes } from 'react-router-dom'
+import Catalogo from '../../components/Catalogo/Catalogo';
 import NavBar from '../../components/NavBar/NavBar';
-import { Noticias } from '../../components/noticias/Noticias';
-import './App.css';
-import CarouselFeatures from '../../components/carrouselFeatures/CarouselFeatures';
-import Portada from '../../components/Portada/Portada';
+import DataContext from '../../components/dataContext/DataContext';
+import React, { useEffect, useState, useContext } from 'react';
 import axios from 'axios';
-import { useEffect, useState } from 'react';
-import Footer from '../../components/Footer/Footer';
+
 
 
 
 function App() {
-
   const [ state , setState] = useState( [] );
   
   useEffect(() => {
-
+    
     const getData = async () => {
       let { data } = await axios.get('http://localhost:8000/games');
       return data;
     }
-
+    
     getData().then( games => setState( games ) );
-  
+    
   }, [])
 
-  console.log( state );
-  
-
-  
   return (
+    <DataContext.Provider value={state}>
     <>
-      <NavBar/>
-      <Portada/>
-      <Noticias />
-      <CarouselFeatures 
-      slides={ state }
-      />
-      <CarouselFeatures 
-      slides={ state }
-      onSale={true}/>
-      <Footer/>
+      
+      <NavBar />
+      <Routes>
+        <Route exact path='*' element={<Home/>}/>
+        <Route path='/catalogo' element={<Catalogo/>}/>
+      </Routes>
+  
     </>
+    </DataContext.Provider>
   );
 }
 

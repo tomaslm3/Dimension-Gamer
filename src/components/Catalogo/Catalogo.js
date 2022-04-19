@@ -1,8 +1,13 @@
 import React from 'react'
+import Juego from "./Juego.jsx"
+import Juegos from "./Juegos.js"
+
 
 const Catalogo = () => {
   return (
-    <div>Catalogo</div>
+    <div>
+      <Juegos/>
+    </div>
   )
 }
 
