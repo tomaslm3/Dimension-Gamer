@@ -9,11 +9,12 @@ const Juegos = ({ juegos }) => {
       {
 
         return (<Juego 
-                  id = {index}
+                  key={index}
                   image = {juego.image}
                   title= {juego.data.title}
                   description= {juego.data.description}
-                  discount= {juego.discount.discount}
+                  discount= {juego.discounts.discount}
+                  // precio= { El precio }
                   />)
       
 

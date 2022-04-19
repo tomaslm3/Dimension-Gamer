@@ -1,12 +1,17 @@
-import React from 'react'
-import Juego from "./Juego.jsx"
+import React, { useContext } from 'react'
+import { DataContext } from '../dataContext/DataContext.js';
+// import Juego from "./Juego.jsx"
 import Juegos from "./Juegos.js"
 
 
 const Catalogo = () => {
+
+  const juegos = useContext(DataContext);
+  console.log(juegos)
+
   return (
     <div>
-      <Juegos/>
+      <Juegos juegos={juegos}/>
     </div>
   )
 }

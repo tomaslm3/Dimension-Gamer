@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Juego({id,image,title,description,discount,precio}) {
+export default function Juego({id,image,title,description,discount,precio = '$2pe'}) {
     return(
         <div className="card">
             <div key={id}>
@@ -8,7 +8,7 @@ export default function Juego({id,image,title,description,discount,precio}) {
                 <div className="card-info">
                     <h3 className="card-title">{title}</h3>
                     <p className="card-info">{description}</p>
-                    <p className="card-info">{{precio} ? {precio} : 'Aca va el precio'} || {discount}</p>
+                    <p className="card-info">{ precio ? precio : 'Aca va el precio'} </p>
                 </div>
             </div>
 
