@@ -2,8 +2,8 @@ import Home from '../../components/home/Home';
 import { Route, Routes } from 'react-router-dom'
 import Catalogo from '../../components/Catalogo/Catalogo';
 import NavBar from '../../components/NavBar/NavBar';
-import DataContext from '../../components/dataContext/DataContext';
-import React, { useEffect, useState, useContext } from 'react';
+import {DataContext} from '../../components/dataContext/DataContext';
+import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
 
@@ -25,15 +25,15 @@ function App() {
 
   return (
     <DataContext.Provider value={state}>
-    <>
-      
-      <NavBar />
-      <Routes>
-        <Route exact path='*' element={<Home/>}/>
-        <Route path='/catalogo' element={<Catalogo/>}/>
-      </Routes>
-  
-    </>
+      <>
+        
+        <NavBar />
+        <Routes>
+          <Route exact path='*' element={<Home/>}/>
+          <Route path='/catalogo' element={<Catalogo/>}/>
+        </Routes>
+    
+      </>
     </DataContext.Provider>
   );
 }
