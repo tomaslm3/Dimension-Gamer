@@ -47,7 +47,7 @@ function CarouselFeatures({ slides, onSale }) {
   if(onSale){
   return (
     <div>
-      <div className="title">En oferta</div>
+      <div className="title">EN OFERTA</div>
     <section className="carousel">
       
       <button className="arrows" onClick={prevSlide}>
@@ -83,7 +83,7 @@ function CarouselFeatures({ slides, onSale }) {
   } else {
     return (
       <div>
-        <div className="title">Destacados</div> 
+        <div className="title">DESTACADOS</div> 
       <section className="carousel">
         <button className="arrows" onClick={prevSlide}>
         <FaAngleDoubleLeft/>

@@ -1,17 +1,26 @@
 * {
-    margin: 0px;
+    margin: 0;
+    padding: 0;
     position: relative;
+    font-family: 'Alumni Sans', sans-serif
 }
 
 html {
-    background-color: var(--main);
+    background-color: var(--GreyColor);
 }
 
 
 
 :root {
-    --main: #1a1a33;
-    --dark: #0c0c22;
-    --blue: #3a86ff;
+    --LightGreyColor: #6c757d ;
+    --GreyColor: #343a40;
+    --DetailsColor: #3a86ff;
+    --DetailsColor2: #38dce2;
+    --Plata: #e3e4e5;
+    --ContainerGrayColor: #282c31;
     
+}
+
+p{
+    font-family: 'Alumni Sans', sans-serif;
 }

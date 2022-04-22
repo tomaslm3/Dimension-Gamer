@@ -12,9 +12,8 @@ const MenuItemsMobile = () => {
      
  <ul className='menu-items-mobile'>
      
- <li><a href='#'>INICIO</a></li>
- <li><Link to='/catalogo'>Catalogo</Link></li>
- <li><a href='#'>CATALOGO</a></li>
+ <li><Link to='/home'>INICIO</Link></li>
+ <li><Link to='/catalogo'>CATALOGO</Link></li>
  <li><a href='#'>NOVEDADES</a></li>
  <li><a href='#'>OFERTAS</a></li>
  <li><a href='#'>FORO</a></li>

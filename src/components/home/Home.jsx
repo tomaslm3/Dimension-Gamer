@@ -7,6 +7,7 @@ import Footer from '../Footer/Footer';
 // import axios from 'axios';
 import {DataContext} from "../dataContext/DataContext";
 
+
 export default function Home() {
   // const [ state , setState] = useState( [] );
   

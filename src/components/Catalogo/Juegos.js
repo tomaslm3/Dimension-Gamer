@@ -1,20 +1,30 @@
 import React from 'react'
 import Juego from "./Juego.jsx"
 
-const Juegos = ({ juegos }) => {
 
+
+
+const Juegos = ({ juegos,setCart,cart }) => {
+  
   return (
-    
-      juegos.map( (juego, index ) => 
+
+      juegos.map( (juego, index) => 
       {
+        const {image,data,discounts} = juego;
+        const {discount,percent}= discounts
+        const {title,description} = data;
 
         return (<Juego 
-                  key={index}
-                  image = {juego.image}
-                  title= {juego.data.title}
-                  description= {juego.data.description}
-                  discount= {juego.discounts.discount}
-                  // precio= { El precio }
+                  id={index+1}
+                  image = {image}
+                  title= {title}
+                  description= {description}
+                  discount= {discount}
+                  percent={percent}
+                  cart={cart}
+                  setCart={setCart}
+                  juego={juego}
+                  juegos={juegos}
                   />)
       
 

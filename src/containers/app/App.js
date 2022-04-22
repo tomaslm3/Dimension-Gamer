@@ -5,6 +5,7 @@ import NavBar from '../../components/NavBar/NavBar';
 import {DataContext} from '../../components/dataContext/DataContext';
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import Cart from '../../components/ShoppingCart/Cart';
 
 
 
@@ -32,7 +33,7 @@ function App() {
           <Route exact path='*' element={<Home/>}/>
           <Route path='/catalogo' element={<Catalogo/>}/>
         </Routes>
-    
+        
       </>
     </DataContext.Provider>
   );

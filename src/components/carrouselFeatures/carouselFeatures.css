@@ -6,7 +6,8 @@
     font-family:'Alumni Sans', sans-serif;
     font-size: 55px;
     margin-left: 55px;
-    color: white;
+    color: gold;
+    border-top: 3px solid black;
 }
 
 .carousel{
@@ -92,9 +93,8 @@
     .title{
         font-family:'Alumni Sans', sans-serif;
         font-size: 30px;
-        color: white;
-        padding: 0px;
-        margin: 0px;
+        padding: 10px 0 0 0;
+        margin: 0;
         margin-left: 40px;
     }
     
@@ -184,7 +184,6 @@
         .title{
             font-family:'Alumni Sans', sans-serif;
             font-size: 60px;
-            color: rgb(255, 255, 255);
             padding: 0px;
             margin: 0px;
             margin-left: 40px;
