@@ -39,7 +39,34 @@
 .contenedor-btn button:hover{
     background-color: var(--DetailsColor2);
     transition: .2s;
+
 }
+
+.shopList-dropdown{
+    position: absolute;
+    top: 58px;
+    width: 300px;
+    transform: translateX(-45%);
+    background-color: white;
+    border : 1px solid var(--DetailsColor2);
+    border-radius: 5px;
+    padding: 1rem;
+    overflow: hidden;
+}
+
+
+.listAmount{
+    position: fixed;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    width: max-content;
+    height: max-content;
+    color: var(--DetailsColor2);
+    background-color: red;
+    border-radius: 80%;
+}
+
 
 
 /*MENU ITEMS*/

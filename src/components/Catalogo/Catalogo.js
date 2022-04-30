@@ -1,26 +1,20 @@
-import React, { useContext,useState } from 'react'
-import { DataContext } from '../dataContext/DataContext.js';
-// import Juego from "./Juego.jsx"
-import Juegos from "./Juegos.js"
+import React, { useEffect } from 'react'
+import { useDispatch, useSelector } from "react-redux";
+import { getGames } from '../../redux/actions/index.js';
+import Juegos from '../Juegos/Juegos.js';
 import "./Catalogo.css"
-import Cart from '../ShoppingCart/Cart.js';
-import {cart,setCart} from "../ShoppingCart/Cart"
 
 const Catalogo = ({index}) => {
+  const dispatch = useDispatch()
+  const games = useSelector(state => state.games)
 
-  const juegos = useContext(DataContext);
+  useEffect(() => {
+    dispatch(getGames())
+  }, [dispatch])
 
-  const [cart, setCart] = useState([]);
-  
   return (
     <div className='container-juegos'>
-      <Juegos juegos={juegos} cart={cart} setCart={setCart}/>
-      <Cart 
-      cart={cart}
-      setCart={setCart}
-      juegos={juegos}
-      
-    />
+      <Juegos games={games}/>
     </div>
   )
 }
