@@ -25,6 +25,9 @@ const NavBar = () => {
         <p className='listAmount'>{cart.length}</p>
         <div className='shopList-dropdown'>
             {cartOpen && <ShopList games={cart}/>}
+            <Link to='/cart'>
+              <button className='shopList-btn'>Ver carrito</button>
+            </Link>
         </div>
       </div>
 
