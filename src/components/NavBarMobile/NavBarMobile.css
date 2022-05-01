@@ -1,0 +1,55 @@
+.menu-items-mobile{
+    display: none;
+    cursor: pointer;
+    padding-top: 10px;
+    margin-right: 120px;
+    list-style: none;
+}
+.menu-items-mobile li{
+    border-radius: 3px;
+    margin: 0 5px;
+}
+.menu-items-mobile li a{
+    padding: 7px 13px;
+    text-decoration: none;
+    font-family:'Alumni Sans', sans-serif;
+    font-size: 22px;
+    display: block;
+    color: black;
+}
+.menu-items-mobile li:hover{
+    background-color: rgba(0,0,0,.1);
+    transition: .4s;
+}
+
+@media screen and (max-width: 768px) {
+    .menu-items-mobile{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background:var(--LightGreyColor);
+        margin-top: 370px;
+        opacity: 1;
+        position: absolute;
+        width: 100%;
+        opacity: 1;
+        border-top: 2px solid #38dce2;
+    }
+
+    .menu-items-mobile li{
+        border-bottom: 1px solid lightslategrey;
+        margin: 0;
+    }
+
+
+
+
+}
+
+@media screen and (max-width:425px) {
+
+
+
+
+
+}

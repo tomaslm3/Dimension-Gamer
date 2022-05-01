@@ -1,0 +1,79 @@
+.container-juegos{
+    padding-top: 85px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,0fr);
+    grid-row-gap: 20px ;
+    grid-column-gap: 75px ;
+    justify-items: center;
+    justify-content: center;
+}
+
+.card{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    
+}
+
+img{
+    max-width: 100%;
+    object-fit: cover;
+}
+.card-title{
+    padding-top: 5px;
+}
+.card-info{
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 2px solid black;
+    font-size: 20px;
+}
+.card-text{
+    color: var(--Plata);
+}
+ button{
+    border: none;
+    border-radius: 3px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-bottom: 5px;
+    background-color: var(--DetailsColor2);
+    font-size: 18px;
+ }
+
+ button:hover{
+     opacity: 0.7;
+     transition: 0.2s;
+ }
+ .btn-id{
+    border: none;
+    border-radius: 3px;
+    padding: 2px 5px;
+    cursor: pointer;
+    margin: 0 5px;
+    background-color: var(--DetailsColor2);
+    font-size: 15px;
+ }
+
+ @media screen and (max-width: 768px) {
+    .container-juegos{
+        grid-template-columns: 1fr 1fr ;
+    }
+
+
+
+ }
+
+ @media screen and (max-width:525px) {
+    .container-juegos{
+        grid-template-columns: 1fr ;
+    }
+ }
