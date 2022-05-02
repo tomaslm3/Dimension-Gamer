@@ -1,6 +1,6 @@
 import React from 'react';
 import './NavBar.css';
-import {FaRegUser,FaSearch,FaShoppingCart,FaBars} from "react-icons/fa";
+import {FaTimes,FaShoppingCart,FaBars} from "react-icons/fa";
 import Logo from './Logo';
 import MenuItems from './MenuItems';
 import MenuItemsMobile from '../NavBarMobile/MenuItemsMobile';
@@ -18,22 +18,26 @@ const NavBar = () => {
     <div className='contenedor-nav'>
         <Logo/>
         <MenuItems/>
+        {open 
+        ? <button onClick={()=> setOpen(!open)} className="menu-items-btn"><FaTimes/></button> 
+        : <button onClick={()=> setOpen(!open)} className="menu-items-btn"><FaBars/></button> }
         {open && <MenuItemsMobile/>}
         
-      <div className='contenedor-btn'>        
+     
+
+    
+    
+    <div className='contenedor-btn'>        
         <button onClick={()=> setCartOpen(!cartOpen)}><FaShoppingCart/></button>
         <p className='listAmount'>{cart.length}</p>
         <div className='shopList-dropdown'>
             {cartOpen && <ShopList games={cart}/>}
             <Link to='/cart'>
-              <button className='shopList-btn'>Ver carrito</button>
+              <button className='cartBtn'>Ver Carrito</button>
             </Link>
         </div>
       </div>
 
-    <button onClick={()=> setOpen(!open)} className="menu-items-btn"><FaBars/></button>
-
-        
     </div>
   )
 }

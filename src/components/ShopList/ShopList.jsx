@@ -3,7 +3,7 @@ import ShopListJuego from "../shopListJuegos/ShopListJuegos";
 
 function ShopList({games}) {
     return (
-        <div>
+        <div className="containerShopList">
             {games && games.map(game => {
                 return (
                     <ShopListJuego

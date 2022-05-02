@@ -33,3 +33,9 @@ export const fethCart = () => {
         type: "FETCH_CART",
     };
 }
+
+export const resetCart = () =>{
+    return {
+        type :'REMOVE_ALL_FROM_CART',
+    };
+}

@@ -16,12 +16,12 @@ export default function Juego( { id, image, title, price, discount, percent } ) 
                 <img src={image} alt={title} className="card-image"/>
                 <div className="card-info">
                     <h3 className="card-title">{title}</h3>
-                    <p className="card-price">PRECIO: $ {price} </p>
-                    <p className="card-discount">DESCUENTO : {discount ? percent : "-"} % </p>
+                    <p className="card-price">PRICE: $ {price} </p>
+                    <p className="card-discount">DISCOUNT : {discount ? percent+"%" : "NO"}  </p>
                 </div>
             </div>
-            <div>
-                <button onClick={() => handleAddToCart(id)} >Comprar</button>
+            <div className="card-button">
+                <button onClick={() => handleAddToCart(id)} >ADD TO CART</button>
             </div>
         </div>
 

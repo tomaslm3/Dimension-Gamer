@@ -14,7 +14,9 @@ function CartGames({ games }) {
                     image={game.image}
                     discount={game.discounts.discount}
                     percent={game.discounts.percent}
+                   
                     />
+                    
                 );
             })}
         </div>

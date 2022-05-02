@@ -4,7 +4,7 @@ import { getGames } from '../../redux/actions/index.js';
 import Juegos from '../Juegos/Juegos.js';
 import "./Catalogo.css"
 
-const Catalogo = ({index}) => {
+const Catalogo = () => {
   const dispatch = useDispatch()
   const games = useSelector(state => state.games)
 

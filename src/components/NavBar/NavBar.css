@@ -63,8 +63,8 @@
 .shopList-dropdown{
     position: absolute;
     top: 58px;
-    width: 300px;
-    transform: translateX(-45%);
+    width: 150px;
+    transform: translateX(-65%);
     background-color: white;
     border : 1px solid var(--DetailsColor2);
     border-radius: 5px;
@@ -78,13 +78,27 @@
     font-size: 20px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    width: max-content;
-    height: max-content;
+    height: 25px;
     color: var(--DetailsColor2);
     background-color: red;
-    border-radius: 80%;
+    width: 20px;
+    text-align: center;
+    margin-right: 15px;
+    border-radius: 100%;
 }
-
+.shopList-dropdown button{
+    width: 100px;
+    border-radius: 5px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    background-color: var(--LightGreyColor);
+    text-decoration: none;
+    border-color: transparent;
+}
 
 
 /*MENU ITEMS*/
