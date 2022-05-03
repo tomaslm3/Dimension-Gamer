@@ -4,6 +4,7 @@ import { addToCart } from "../../redux/actions";
 import './Juego.css';
 
 export default function Juego( { id, image, title, price, discount, percent } ) {
+    console.log(id);
     const dispatch = useDispatch();
 
     function handleAddToCart(id) {

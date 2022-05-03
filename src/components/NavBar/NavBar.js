@@ -13,6 +13,7 @@ const NavBar = () => {
   const [open, setOpen ]= useState(false);
   const [cartOpen, setCartOpen ]= useState(false);
   const cart = useSelector(state => state.cart);
+  let totalCart = cart.map(item=> item.cantidad).reduce((a,b)=> a+b,0); //reduce(funcion, valor inicial)
 
   return (
     <div className='contenedor-nav'>
@@ -27,15 +28,18 @@ const NavBar = () => {
 
     
     
-    <div className='contenedor-btn'>        
-        <button onClick={()=> setCartOpen(!cartOpen)}><FaShoppingCart/></button>
-        <p className='listAmount'>{cart.length}</p>
-        <div className='shopList-dropdown'>
-            {cartOpen && <ShopList games={cart}/>}
             <Link to='/cart'>
               <button className='cartBtn'>Ver Carrito</button>
+              <p className='listAmountResponse'>{totalCart}</p>
             </Link>
+    <div className='contenedor-btn'>        
+        <button className="shopOff" onClick={()=> setCartOpen(!cartOpen)}><FaShoppingCart/></button>
+        <p className='listAmount shopOff'>{totalCart}</p>
+        {cartOpen && 
+        <div className='shopList-dropdown'>
+            <ShopList games={cart}/>
         </div>
+        }
       </div>
 
     </div>

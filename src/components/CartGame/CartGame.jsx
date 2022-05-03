@@ -1,9 +1,9 @@
 import React from "react";
 import { useDispatch } from "react-redux";
 import { deleteFromCart,addToCart } from "../../redux/actions";
-import "../Cart/Cart.css"
+import "./CartGame.css"
 
-function CartGame({ id, title, price, image, discount, percent}) {
+function CartGame({ id, title, price, image, discount, percent,cantidad}) {
     const dispatch = useDispatch();
 
     function handleRemoveFromCart(id) {
@@ -17,9 +17,10 @@ function CartGame({ id, title, price, image, discount, percent}) {
             <img src={image} alt={title} height={100}/>
             <div key={id}>
                 <h3>{title}</h3>
-                <p>PRICE: ${price} </p>
-                <p>DISCOUNT: {discount ? "YES" : "NO"} </p>
-                <p>PERCENT: {percent ? percent+"%" : "-"} </p>
+                <p className="numberPrice">PRECIO: ${price} </p>
+                <p>CANTIDAD: {cantidad}</p>
+                {/* <p>DISCOUNT: {discount ? "YES" : "NO"} </p> */}
+                {percent && <p className="numberDiscount">{percent ? percent+"%" : "-"} </p>}
             </div>
             <div className="containerButtonsCart">
             <button className="btnRemove" onClick={() => handleRemoveFromCart(id)}>-</button>

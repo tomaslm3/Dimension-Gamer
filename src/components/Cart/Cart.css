@@ -1,5 +1,6 @@
 
 .cartContent{
+    position: relative;
     padding-top: 10px;
     padding-left: 20px;
     background-color: var(--LightGreyColor);
@@ -23,6 +24,11 @@
     text-align: center;
     padding-bottom: 30px;
 }
+
+.buttonRemove{
+    margin-right: 25px;
+}
+
 .shopTitle{
     padding-top: 100px;
     font-size: 30px;
