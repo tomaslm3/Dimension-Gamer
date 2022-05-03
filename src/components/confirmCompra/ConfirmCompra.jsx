@@ -4,10 +4,10 @@ import { Link } from 'react-router-dom';
 
 export const ConfirmCompra = ( { setConfirm } ) => {
 
-    const handleButtonSi = () => {
+    // const handleButtonSi = () => {
         
-    }
-    
+    // }
+
     
     const handleButtonNo = ( e ) => {
         setConfirm( false )
