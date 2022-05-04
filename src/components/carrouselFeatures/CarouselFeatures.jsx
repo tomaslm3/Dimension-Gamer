@@ -77,6 +77,8 @@ function CarouselFeatures({ slides, onSale }) {
       <FaAngleDoubleRight/>
       </button>
     </section>
+    <hr className='hr'/>
+
     </div>
   );
   // Crousel para todos los juegos
@@ -130,6 +132,7 @@ function CarouselFeatures({ slides, onSale }) {
         <FaAngleDoubleRight/>
         </button>
       </section>
+      <hr className='hr'/>
       </div>
     );
   }

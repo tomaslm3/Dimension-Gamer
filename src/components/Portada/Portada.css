@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@1,500&family=Fira+Code:wght@300&family=Montserrat:wght@500&family=Staatliches&display=swap');
 
 .portada img{
-  width: 100%;
+  min-width: 100vw;
   height: 500px;
   margin-top: 75px;
-  position: relative;
+  position: realative;
 }
 
 .texto-portada{
@@ -13,40 +13,55 @@
     text-align: center;
     padding-top: 10px;
     position: absolute;
-    top:15%;
-    left: 20%;
+    /* top:15%; */
+    left: 50%;
+    transform: translateX(-50%);
+    width: fit-content;
+
+
+}
+
+.portada-h3 {
+    top: 15%
+}
+
+.portada-p {
+    bottom: 15px;
 }
 
 .texto-portada h3{
-    font-size: 65px;
+    justify-content: center;
+    font-size: 70px;
 }
 .texto-portada p{
-    padding-top: 300px;
+
+    /* padding-top: 300px; */
     font-size: 45px;
 }
 
 @media screen and (max-width: 768px) {
     
     .portada img{
-        width: 100%;
+        width: 100vw;
         image-rendering: auto;
         object-fit: cover;
     }
     
     .texto-portada h3{
-        left: -60px;
+        /* left: -60px; */
         font-size: 50px;
     }
     .texto-portada p{
-        left: -70px;
+        /* left: -70px; */
         font-size: 35px;
-        padding-top: 310px;
+        /* padding-top: 310px; */
     }
  }
 
 @media screen and (max-width: 425px) {
     .portada{
         width: 400px;
+        width: auto;
     }
     .texto-portada h3{
         font-size: 40px;
@@ -58,3 +73,9 @@
 
 }
 
+.hr {
+    border-width: 3px 0px 0px 0px;
+    border-top-color: black;
+    margin: 0px 25px 0px 25px;
+    padding: 0%;
+}   

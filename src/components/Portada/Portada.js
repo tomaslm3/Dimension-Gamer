@@ -5,10 +5,14 @@ const Portada = () => {
   return (
     <div className='portada'>
       <img src={portada}/>
-        <div className='texto-portada'>
+        <div className='texto-portada portada-h3'>
             <h3>¡BIENVENIDOS A DIMENSION GAMER!</h3>
-            <p>Disfruta de los mejores juegos al mejor precio del mercado</p>
         </div>
+        <div className='texto-portada portada-p'>
+            <p>Disfruta de los mejores juegos al mejor precio del mercado</p>
+
+        </div>
+        <hr className='hr'/>
     </div>
   )
 }

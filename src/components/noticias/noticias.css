@@ -45,7 +45,7 @@ a{
     margin-left: 70px;
     color: gold;
     font-family:'Alumni Sans', sans-serif;
-    border-top: 3px solid black;
+    /* border-top: 3px solid black; Se reemplaza por hr*/
 }
 
 @media screen and (max-width: 768px) {
@@ -62,3 +62,8 @@ a{
         text-align: center;
     }
 }
+/* Lo pisa la clase .hr de otro componente */
+/* .hr {
+    border-width: 3px 0px 0px 0px;
+    border-top-color: black;
+}   */

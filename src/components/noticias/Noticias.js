@@ -23,7 +23,9 @@ export const Noticias = () => {
         {/* <p className='parrafo2'>El resultado es <a href="https://comandogdev.itch.io/califonication">un pequeño juego creado en Unity que ha publicado en la plataforma itch.io</a> y que nos transporta al mundo del videoclip a través de siete niveles con diferentes mecánicas. Tienes la posibilidad de elegir entre cualquiera de los miembros de la banda como tu personaje a controlar.</p> */}
 
     </div>
+
     </div>
+    <hr className='hr'/>
     </>
   )
 }
