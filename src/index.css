@@ -24,3 +24,62 @@ html {
 p{
     font-family: 'Alumni Sans', sans-serif;
 }
+
+/* Agregado */
+
+html {
+    font-size: 100%;
+}
+
+p{
+  font-size: 24px;
+  font-size: 1.5rem;
+  
+}
+
+h1 {
+    font-size: 48px;
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 40px;
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 32px;
+    font-size: 2rem;
+}
+
+@media screen and ( max-width: 65rem ) {
+    html {
+        font-size: 90%;
+    }
+
+}
+
+@media screen and ( max-width: 58rem ) {
+    html {
+        font-size: 80%;
+    }
+}
+
+
+@media screen and ( max-width: 40rem ) {
+    
+    
+    img {
+        width: 30rem;
+    }
+} 
+
+@media screen and ( max-width: 35rem ) {
+    html {
+        font-size: 60%;
+    }
+
+    img {
+        width: 30rem;
+    }
+}

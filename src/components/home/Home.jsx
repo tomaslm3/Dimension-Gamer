@@ -1,32 +1,24 @@
-import React, { useContext } from "react";
+import React, { useState } from "react";
 import NavBar from '../NavBar/NavBar';
 import { Noticias } from '../noticias/Noticias';
 import CarouselFeatures from '../carrouselFeatures/CarouselFeatures';
 import Portada from '../Portada/Portada';
 import Footer from '../Footer/Footer';
-// import axios from 'axios';
-import {DataContext} from "../dataContext/DataContext";
+import { useDispatch, useSelector } from "react-redux";
+import { getGames } from "../../redux/actions";
+
 
 
 export default function Home() {
-  // const [ state , setState] = useState( [] );
-  
-  // useEffect(() => {
-    
-  //   const getData = async () => {
-  //     let { data } = await axios.get('http://localhost:8000/games');
-  //     return data;
-  //   }
-    
-  //   getData().then( games => setState( games ) );
-    
-  // }, [])
-  // const context = useContext()
-  // const stateJuegos = context(state);
-  // console.log( state );
+    const dispatch = useDispatch();
 
-  const data = useContext(DataContext)
-//   console.log(data)
+    useState(() => {
+        dispatch(getGames());
+    }, []);
+
+    const data = useSelector(state => state.games);
+
+
     return(
         <div>
             <NavBar/>

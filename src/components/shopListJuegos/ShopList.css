@@ -1,0 +1,33 @@
+.shopList-info{
+    display: grid;
+    grid-template-columns: repeat(3,30% 55% 15%);
+    gap: 10px; 
+}
+
+.shop-list-elements p{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.shop-list-elements h3{
+    font-size: 30px;
+    font-weight: bold;
+}
+.shop-list-elements p{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.shopList-btn{
+    background-color: var(--WhiteColor);
+    margin-right: 20px;
+    margin-top: 10px;
+}
+.shopList-btn button{
+    width: 25px;
+    height: 30px;
+    margin: 5px 0;
+    padding: 0;
+    border-radius: px;
+}

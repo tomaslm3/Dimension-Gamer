@@ -11,7 +11,7 @@ const MenuItems = () => {
 
  <ul className='menu-items'>
  {/* <li><a href='#'>INICIO</a></li> */}
- <li><Link to='/'>INICIO</Link></li>
+ <li><Link to='/home'>INICIO</Link></li>
  <li><Link to='/catalogo'>CATALOGO</Link></li>
  {/* <li><a href='/catalogo'>CATALOGO</a></li> */}
  <li><a href='#'>NOVEDADES</a></li>

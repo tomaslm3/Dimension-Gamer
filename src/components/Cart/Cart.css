@@ -1,0 +1,44 @@
+
+.cartContent{
+    position: relative;
+    padding-top: 10px;
+    padding-left: 20px;
+    background-color: var(--LightGreyColor);
+    text-align: center;
+}
+.shoppingCard{
+    display: flex;
+    gap: 15px;
+    align-content: center;
+    margin: 5px;
+    padding: 10px;
+    border-bottom: 2px solid black;
+}
+.containerButtonsCart {
+    display: flex;
+    flex-direction: column;
+}
+.containerButtonsCart button{
+    height: 20px;
+    margin: 10px 0;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.buttonRemove{
+    margin-right: 25px;
+}
+
+.shopTitle{
+    padding-top: 100px;
+    font-size: 30px;
+    
+ }
+
+ @media screen and (max-width: 500px) {
+    .shopTitle{
+        padding-top: 150px;
+        font-size: 30px;
+        
+     }
+ }

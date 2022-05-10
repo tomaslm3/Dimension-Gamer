@@ -1,35 +1,44 @@
 .contenedor-noticia {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 25px ;
+    display: flex;
+    flex-direction: row;
+    /* display: grid; */
+    /* grid-template-columns: 1fr 1fr; */
+    /* grid-column-gap: 25px ; */
     margin: 0px 15px 50px -15px;
     width: 100%;
 
 }
 
 .img {
-    margin: 0;
+/*     margin: 0;
     padding: 0;
-     width: 100%;
+    width: 100%; */
+    display: flex;
 }
+
+.img-noticia {
+    max-width: 500px;
+    max-height: 280px;
+    object-fit: cover;    
+}
+
+
 
 .info-noticia{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 5px;
 }
 .info-noticia h1{
-    font-size: 45px;
     font-weight: bold;
 }
 .info-noticia h2{
-    font-size: 38px;
     font-weight: bold;
     color: black;
 }
 .info-noticia p{
-    font-size: 25px;
     color: var(--Plata);
 }
 .color-title {
@@ -41,18 +50,18 @@ a{
 
 .titulo{
     margin: 55px 0px 0px 0px;
-    font-size: 55px;
     margin-left: 70px;
     color: gold;
     font-family:'Alumni Sans', sans-serif;
-    border-top: 3px solid black;
+    /* border-top: 3px solid black; Se reemplaza por hr*/
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 50rem) {
 
     .contenedor-noticia{
-        grid-template-columns: 1fr;
-        text-align: center;
+        /* grid-template-columns: 1fr; */
+        flex-direction: column;
+        align-items: center;
     }
 
     .info-noticia{
@@ -62,3 +71,18 @@ a{
         text-align: center;
     }
 }
+
+
+@media screen and ( max-width: 30rem ){
+    
+    .contenedor-noticia {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}
+/* Lo pisa la clase .hr de otro componente */
+/* .hr {
+    border-width: 3px 0px 0px 0px;
+    border-top-color: black;
+}   */
