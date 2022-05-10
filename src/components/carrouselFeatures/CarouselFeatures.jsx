@@ -13,7 +13,9 @@ function CarouselFeatures({ slides, onSale }) {
     length = slides.length;
   }
 
-  const autoScroll = true;
+  // const autoScroll = true;
+  const autoScroll = false;
+  
   let slideInterval;
   
   const nextSlide = () => {
@@ -46,47 +48,52 @@ function CarouselFeatures({ slides, onSale }) {
   // Crousel para las ofertas
   if(onSale){
   return (
-    <div>
-      <div className="title">EN OFERTA</div>
-    <section className="carousel">
-      
-      <button className="arrows" onClick={prevSlide}>
-      <FaAngleDoubleLeft/>
-      </button>
-      {slideDiscount.map((slide, index) => {
-        return (
-          <div
-            className={index === currentSlide ? "slide-active" : "slide"}
-            key={index}
-          >
-            
-            {index === currentSlide && (
-              <div className='slideStylesOff'>
-              <img src={slide.image} alt="img not found" className="image" />
-              <div className="slideInfo">  
-                <h2 className="infoTitle">{slide.data.title}</h2>
-                <p className="infoDesc">{slide.data.description}</p>
-                <p className="offLabel">-{slide.discounts.percent}%</p>
-              </div>
-            </div>
-            )}
-          </div>
-        );
-      })}
-      <button className="arrows" onClick={nextSlide}>
-      <FaAngleDoubleRight/>
-      </button>
-    </section>
-    <hr className='hr'/>
+    <>
+      <div className="title">
+        <h1>EN OFERTA</h1>
+      </div>
 
-    </div>
+      <section className="carousel">
+        
+        <button className="arrows" onClick={prevSlide}>
+          <FaAngleDoubleLeft/>
+        </button>
+        {slideDiscount.map((slide, index) => {
+          return (
+            <div
+              className={index === currentSlide ? "slide-active" : "slide"}
+              key={index}>
+              
+              {index === currentSlide && (
+                <div className='slideStylesOff'>
+                  <img src={slide.image} alt="img not found" className="image"/>
+                  <div className="slideInfo">  
+                    <h2 className="infoTitle">{slide.data.title}</h2>
+                    <p className="infoDesc">{slide.data.description}</p>
+                    <p className="offLabel">-{slide.discounts.percent}%</p>
+                  </div>
+              </div>
+              )}
+            </div>
+          );
+        })}
+        <button className="arrows" onClick={nextSlide}>
+        <FaAngleDoubleRight/>
+        </button>
+      </section>
+      <hr className='hr'/>
+
+    </>
   );
   // Crousel para todos los juegos
   } else {
     return (
       <div>
-        <div className="title">DESTACADOS</div> 
-      <section className="carousel">
+        
+        <div className="title">
+          <h1>DESTACADOS</h1>
+        </div> 
+        <section className="carousel">
         <button className="arrows" onClick={prevSlide}>
         <FaAngleDoubleLeft/>
         </button>
@@ -131,8 +138,8 @@ function CarouselFeatures({ slides, onSale }) {
         <button className="arrows" onClick={nextSlide}>
         <FaAngleDoubleRight/>
         </button>
-      </section>
-      <hr className='hr'/>
+        </section>
+       <hr className='hr'/>
       </div>
     );
   }

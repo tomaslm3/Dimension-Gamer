@@ -6,10 +6,10 @@ const Portada = () => {
     <div className='portada'>
       <img src={portada}/>
         <div className='texto-portada portada-h3'>
-            <h3>¡BIENVENIDOS A DIMENSION GAMER!</h3>
+            <h1>¡BIENVENIDOS A DIMENSION GAMER!</h1>
         </div>
         <div className='texto-portada portada-p'>
-            <p>Disfruta de los mejores juegos al mejor precio del mercado</p>
+            <h2>Disfruta de los mejores juegos al mejor precio del mercado</h2>
 
         </div>
         <hr className='hr'/>
